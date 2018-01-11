@@ -37,12 +37,7 @@ public class GridViewExample extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, final int i, long l) {
                 Toast.makeText(GridViewExample.this,stringList.get(i),Toast.LENGTH_SHORT).show();
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
 
-                    }
-                });
             }
         });
 
