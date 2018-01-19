@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:gravity="center"
     android:orientation="vertical"
+    android:weightSum="10"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -10,9 +11,15 @@
         android:text="Take Picture"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+    <Button
+        android:text="share Photo"
+        android:id="@+id/bt_share_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
     <ImageView
+        android:layout_weight="5"
         android:id="@+id/iv_camera"
         android:layout_width="match_parent"
-        android:layout_height="400dp" />
+        android:layout_height="0dp" />
 
 </LinearLayout>
